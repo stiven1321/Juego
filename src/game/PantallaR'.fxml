@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane id="AnchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" 
+minWidth="-Infinity" prefHeight="475.37500287532816" prefWidth="845.111083984375" 
+xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="game.Controlador2">
+  <children>
+    <ImageView fitHeight="475.37500287532816" fitWidth="845.111083984375" layoutX="0.0" layoutY="0.0" pickOnBounds="true" preserveRatio="true">
+      <image>
+        <Image url="@Fondo.jpg" />
+      </image>
+    </ImageView>
+    <Label id="TituloJuego" layoutX="365.0" layoutY="8.0" text="Las Tres R's" textFill="#310099" textOverrun="ELLIPSIS">
+      <effect>
+        <InnerShadow color="#ccc400" />
+      </effect>
+      <font>
+        <Font name="Berlin Sans FB" size="25.0" />
+      </font>
+    </Label>
+    <Label layoutX="14.0" layoutY="439.0" text="Jugador =" textFill="WHITE">
+      <font>
+        <Font name="Berlin Sans FB" size="20.0" fx:id="x1" />
+      </font>
+    </Label>
+    <FlowPane layoutX="76.0" layoutY="90.0" prefHeight="340.0" prefWidth="693.0">
+      <children>
+        <VBox alignment="TOP_CENTER" prefHeight="340.0" prefWidth="346.5555419921875">
+          <children>
+            <HBox alignment="TOP_CENTER" prefHeight="100.0" prefWidth="200.0">
+              <children>
+                <CheckBox fx:id ="c3_1" mnemonicParsing="false" text="          " onAction="#metodo_cR1"/>
+                <ImageView fitHeight="80.0" fitWidth="80.0" pickOnBounds="true" preserveRatio="true">
+                  <image>
+                    <Image url="@3Rs.jpg" />
+                  </image>
+                </ImageView>
+              </children>
+            </HBox>
+            <Separator orientation="VERTICAL" prefHeight="6.0" />
+            <Separator orientation="VERTICAL" prefHeight="6.0" />
+            <HBox alignment="TOP_CENTER" prefHeight="100.0" prefWidth="200.0">
+              <children>
+                <CheckBox  fx:id="cReduce_1" mnemonicParsing="false" text="          " onAction="#metodo_cReduce_1" />
+                <ImageView fitHeight="80.0" fitWidth="80.0" pickOnBounds="true" preserveRatio="true">
+                  <image>
+                    <Image url="@reduce1.jpg" />
+                  </image>
+                </ImageView>
+              </children>
+            </HBox>
+            <Separator orientation="VERTICAL" prefHeight="6.0" />
+            <HBox alignment="TOP_CENTER" prefHeight="100.0" prefWidth="200.0">
+              <children>
+                <CheckBox fx:id ="cReutilizar_1" mnemonicParsing="false" text="          " onAction="#metodo_cReutilizar_1"/>
+                <ImageView fitHeight="80.0" fitWidth="80.0" pickOnBounds="true" preserveRatio="true">
+                  <image>
+                    <Image url="@reutiliza.jpg" />
+                  </image>
+                </ImageView>
+              </children>
+            </HBox>
+            <HBox alignment="TOP_CENTER" prefHeight="100.0" prefWidth="200.0">
+              <children>
+                <CheckBox fx:id="cRecicla_1" mnemonicParsing="false" text="          " onAction="#metodo_cRecicla_1" />
+                <ImageView fitHeight="80.0" fitWidth="80.0" pickOnBounds="true" preserveRatio="true">
+                  <image>
+                    <Image url="@recicla1.jpg" />
+                  </image>
+                </ImageView>
+              </children>
+            </HBox>
+          </children>
+        </VBox>
+        <VBox alignment="TOP_CENTER" prefHeight="340.0" prefWidth="346.0">
+          <children>
+            <HBox alignment="TOP_CENTER" prefHeight="100.0" prefWidth="200.0">
+              <children>
+                <CheckBox fx:id="cReduce_2" mnemonicParsing="false" text="          " onAction="#metodo_cReduce_2"/>
+                <ImageView fitHeight="80.0" fitWidth="80.0" pickOnBounds="true" preserveRatio="true">
+                  <image>
+                    <Image url="@reduce2.jpg" />
+                  </image>
+                </ImageView>
+              </children>
+            </HBox>
+            <Separator orientation="VERTICAL" prefHeight="6.0" />
+            <HBox alignment="TOP_CENTER" prefHeight="100.0" prefWidth="200.0">
+              <children>
+                <CheckBox fx:id ="cReutilizar_2" mnemonicParsing="false" text="          " onAction="#metodo_cReutilizar_2" />
+                <ImageView fitHeight="80.0" fitWidth="80.0" pickOnBounds="true" preserveRatio="true">
+                  <image>
+                    <Image url="@reutiliza2.jpg" />
+                  </image>
+                </ImageView>
+              </children>
+            </HBox>
+            <Separator orientation="VERTICAL" prefHeight="6.0" />
+            <HBox alignment="TOP_CENTER" prefHeight="100.0" prefWidth="200.0">
+              <children>
+                <CheckBox fx:id="cRecicla_2" mnemonicParsing="false" text="          " onAction="#metodo_cRecicla_2"/>
+                <ImageView fitHeight="80.0" fitWidth="80.0" pickOnBounds="true" preserveRatio="true">
+                  <image>
+                    <Image url="@recicla2.jpg" />
+                  </image>
+                </ImageView>
+              </children>
+            </HBox>
+            <Separator orientation="VERTICAL" prefHeight="6.0" />
+            <HBox alignment="TOP_CENTER" prefHeight="100.0" prefWidth="200.0">
+              <children>
+                <CheckBox  fx:id="c3_2" mnemonicParsing="false" text="          " onAction="#metodo_cR2" />
+                <ImageView fitHeight="80.0" fitWidth="80.0" pickOnBounds="true" preserveRatio="true">
+                  <image>
+                    <Image url="@3Rs2.jpg" />
+                  </image>
+                </ImageView>
+              </children>
+            </HBox>
+          </children>
+        </VBox>
+      </children>
+    </FlowPane>
+    <Label layoutX="138.0" layoutY="49.0" text="Debes asociar las imagenes de la columna izquierda con la columna derecha">
+      <font>
+        <Font name="Berlin Sans FB" size="18.0" />
+      </font>
+    </Label>
+    <Label font="$x1" layoutX="104.0" layoutY="439.0" prefWidth="186.0" text="" textFill="WHITE" />
+  </children>
+</AnchorPane>
