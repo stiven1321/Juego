@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane id="AnchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" 
+minWidth="-Infinity" prefHeight="475.37500287532816" prefWidth="845.111083984375" 
+xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="game.Controlador">
+  <children>
+    <ImageView fitHeight="475.37500287532816" fitWidth="845.111083984375" layoutX="0.0" layoutY="0.0" pickOnBounds="true" preserveRatio="true" smooth="true">
+      <image>
+        <Image url="@Fondo.jpg" />
+      </image>
+    </ImageView>
+    <Label id="TituloJuego" layoutX="368.0" layoutY="21.0" text="Eco-Game" textFill="#310099" textOverrun="ELLIPSIS">
+      <effect>
+        <InnerShadow color="#ccc400" />
+      </effect>
+      <font>
+        <Font name="Berlin Sans FB" size="25.0" />
+      </font>
+    </Label>
+    <Label layoutX="14.0" layoutY="433.0" text="Jugador =" textFill="WHITE">
+      <font>
+        <Font name="Berlin Sans FB" size="20.0" />
+      </font>
+    </Label>
+    <TextField id="textJugador" fx:id="textJugador" layoutX="101.0" layoutY="433.0" prefWidth="200.0" />
+    <FlowPane layoutX="161.0" layoutY="85.0" prefHeight="279.0" prefWidth="525.0">
+      <children>
+        <VBox alignment="TOP_CENTER" prefHeight="279.0" prefWidth="263.0">
+          <children>
+            <Button id="botonR'" cancelButton="false" defaultButton="true" mnemonicParsing="false" prefWidth="136.0" text="Las 3 R's" textAlignment="CENTER" textFill="WHITE" onAction="#ActionRs">
+              <font>
+                <Font name="Berlin Sans FB" size="18.0" fx:id="x1" />
+              </font>
+            </Button>
+            <Separator orientation="VERTICAL" prefHeight="80.0" />
+            <Button id="botonDeforesta" cancelButton="false" defaultButton="true" font="$x1" mnemonicParsing="false" prefWidth="226.0" text="Evitemos la Deforestación" textAlignment="CENTER" textFill="WHITE" />
+            <Separator orientation="VERTICAL" prefHeight="80.0" />
+            <Button id="botonAgua" cancelButton="false" defaultButton="true" font="$x1" mnemonicParsing="false" prefWidth="174.5555419921875" text="Ahorremos Agua" textAlignment="CENTER" textFill="WHITE" />
+          </children>
+        </VBox>
+        <VBox alignment="TOP_CENTER" prefHeight="221.0" prefWidth="262.0">
+          <children>
+            <Button id="botonBosques" cancelButton="false" defaultButton="true" font="$x1" mnemonicParsing="false" prefWidth="211.0" text="Cuida Nuestros Bosques" textAlignment="CENTER" textFill="WHITE" />
+            <Separator orientation="VERTICAL" prefHeight="80.0" />
+            <Button id="botonFlora" cancelButton="false" defaultButton="true" font="$x1" mnemonicParsing="false" prefWidth="136.0" text="Flora y Fauna" textAlignment="CENTER" textFill="WHITE" />
+            <Separator orientation="VERTICAL" prefHeight="80.0" />
+            <Button id="botonR'" cancelButton="false" defaultButton="true" font="$x1" mnemonicParsing="false" prefWidth="236.0" text="Aprende de Nuestro Planeta" textAlignment="CENTER" textFill="WHITE" textOverrun="ELLIPSIS" />
+          </children>
+        </VBox>
+      </children>
+    </FlowPane>
+  </children>
+</AnchorPane>

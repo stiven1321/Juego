@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane id="AnchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="475.37500287532816" prefWidth="845.111083984375" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2">
+  <children>
+    <ImageView fitHeight="475.37500287532816" fitWidth="845.111083984375" layoutX="0.0" layoutY="0.0" pickOnBounds="true" preserveRatio="true">
+      <image>
+        <Image url="@Fondo.jpg" />
+      </image>
+    </ImageView>
+    <Label id="TituloJuego" layoutX="365.0" layoutY="8.0" text="Ahorremos Agua" textFill="#310099" textOverrun="ELLIPSIS">
+      <effect>
+        <InnerShadow color="#ccc400" />
+      </effect>
+      <font>
+        <Font name="Berlin Sans FB" size="25.0" />
+      </font>
+    </Label>
+    <Label layoutX="14.0" layoutY="439.0" text="Jugador =" textFill="WHITE">
+      <font>
+        <Font name="Berlin Sans FB" size="20.0" fx:id="x1" />
+      </font>
+    </Label>
+    <FlowPane layoutX="76.0" layoutY="90.0" prefHeight="340.0" prefWidth="693.0">
+      <children>
+        <VBox alignment="TOP_CENTER" prefHeight="340.0" prefWidth="346.5555419921875">
+          <children>
+            <HBox alignment="TOP_CENTER" prefHeight="100.0" prefWidth="200.0">
+              <children>
+                <CheckBox mnemonicParsing="false" text="" />
+                <ImageView fitHeight="83.99998092651367" fitWidth="107.23401602818072" pickOnBounds="true" preserveRatio="true">
+                  <image>
+                    <Image url="@ducha.jpg" />
+                  </image>
+                </ImageView>
+              </children>
+            </HBox>
+            <Separator orientation="VERTICAL" prefHeight="6.0" />
+            <HBox alignment="TOP_CENTER" prefHeight="100.0" prefWidth="200.0">
+              <children>
+                <CheckBox mnemonicParsing="false" text="" />
+                <ImageView fitHeight="80.0" fitWidth="80.0" pickOnBounds="true" preserveRatio="true">
+                  <image>
+                    <Image url="@sanitario.jpg" />
+                  </image>
+                </ImageView>
+              </children>
+            </HBox>
+            <Separator orientation="VERTICAL" prefHeight="6.0" />
+            <HBox alignment="TOP_CENTER" prefHeight="100.0" prefWidth="200.0">
+              <children>
+                <CheckBox mnemonicParsing="false" text="" />
+                <ImageView fitHeight="80.0" fitWidth="80.0" pickOnBounds="true" preserveRatio="true">
+                  <image>
+                    <Image url="@Lavadora.png" />
+                  </image>
+                </ImageView>
+              </children>
+            </HBox>
+            <Separator orientation="VERTICAL" prefHeight="6.0" />
+            <HBox alignment="TOP_CENTER" prefHeight="100.0" prefWidth="200.0">
+              <children>
+                <CheckBox mnemonicParsing="false" text="" />
+                <ImageView fitHeight="80.0" fitWidth="80.0" pickOnBounds="true" preserveRatio="true">
+                  <image>
+                    <Image url="@dientes.jpg" />
+                  </image>
+                </ImageView>
+              </children>
+            </HBox>
+          </children>
+        </VBox>
+        <VBox alignment="TOP_LEFT" prefHeight="340.0" prefWidth="346.0">
+          <children>
+            <HBox alignment="TOP_CENTER" prefHeight="100.0" prefWidth="200.0">
+              <children>
+                <CheckBox alignment="TOP_LEFT" mnemonicParsing="false" prefHeight="70.0" prefWidth="341.9998779296875" text="Utilizar la lavadora para cargas completas evitando su uso para pocas prendas" textAlignment="LEFT" wrapText="true">
+                  <font>
+                    <Font name="System Bold" size="15.0" fx:id="x2" />
+                  </font>
+                </CheckBox>
+              </children>
+            </HBox>
+            <Separator orientation="VERTICAL" prefHeight="6.0" />
+            <HBox alignment="TOP_CENTER" prefHeight="100.0" prefWidth="200.0">
+              <children>
+                <CheckBox font="$x2" mnemonicParsing="false" text="Utilizar un vaso con agua para cepillarse los dientes. No dejar la llave abierta. " wrapText="true" />
+              </children>
+            </HBox>
+            <Separator orientation="VERTICAL" prefHeight="6.0" />
+            <HBox alignment="TOP_CENTER" prefHeight="100.0" prefWidth="200.0">
+              <children>
+                <CheckBox font="$x2" mnemonicParsing="false" text="Tomar duchas de corta duración y cerrar la llave se enjabona." wrapText="true" />
+              </children>
+            </HBox>
+            <Separator orientation="VERTICAL" prefHeight="6.0" />
+            <HBox alignment="TOP_CENTER" prefHeight="100.0" prefWidth="200.0">
+              <children>
+                <CheckBox font="$x2" mnemonicParsing="false" prefWidth="346.0" text="Instalar sanitarios de bajo consumo." wrapText="true" />
+              </children>
+            </HBox>
+          </children>
+        </VBox>
+      </children>
+    </FlowPane>
+    <Label layoutX="138.0" layoutY="49.0" text="Debes asociar las imagenes de la columna izquierda con la columna derecha">
+      <font>
+        <Font name="Berlin Sans FB" size="18.0" />
+      </font>
+    </Label>
+    <Label font="$x1" layoutX="104.0" layoutY="439.0" prefWidth="186.0" text="" textFill="WHITE" />
+  </children>
+</AnchorPane>
